@@ -25,28 +25,30 @@
 
 </head>
 <body>
+
     <div id="wrapper">
         <Section>
+            <input type="checkbox" id="nav-toggle">
             <div class="sidebar">
                 <div class="sidebar-brand">
-                    <h1><span class="lab la-accusoft"></span>Techfocus</h1>
+                    <h2><span class="lab la-accusoft"></span><span>Techfocus</span></h2>
                 </div>
                 <div class="sidebar-menu">
                     <ul>
-                        <li><a href="#" class="active"><span class="las la-igloo"></span>Dashboard</a></li>
-                        <li><a href="#"><span class="las la-users"></span>Customers</a></li>
-                        <li><a href="#"><span class="las la-clipboard-list"></span>Projects</a></li>
-                        <li><a href="#"><span class="las la-shopping-bag"></span>Orders</a></li>
-                        <li><a href="#"><span class="las la-receipt"></span>Inventory</a></li>
-                        <li><a href="#"><span class="las la-circle"></span>Accounts</a></li>
-                        <li><a href="#"><span class="las la-clipboard-list"></span>Tasks</a></li>
+                        <li><a href="#" class="active"><span class="las la-igloo"></span><span>Dashboard</span></a></li>
+                        <li><a href="#"><span class="las la-users"></span><span>Customers</span></a></li>
+                        <li><a href="#"><span class="las la-clipboard-list"></span><span>Projects</span></a></li>
+                        <li><a href="#"><span class="las la-shopping-bag"></span><span>Orders</span></a></li>
+                        <li><a href="#"><span class="las la-receipt"></span><span>Inventory</span></a></li>
+                        <li><a href="#"><span class="las la-circle"></span><span>Accounts</span></a></li>
+                        <li><a href="#"><span class="las la-clipboard-list"></span><span>Tasks</span></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="main-content">
                 <header>
-                    <h2><label for=""><span class="las la-bars"></span></label> Dasahboard</h2>
+                    <h2><label for="nav-toggle"><span class="las la-bars"></span></label> Dasahboard</h2>
 
                     <div class="search-wrapper div">
                         <span class="las la-search"></span>
@@ -115,36 +117,61 @@
                                     <button>See All <span class="las la-arrow-right"></span></button>
                                 </div>
                                 <div class="card-body">
-                                    <table width=100%>
-                                        <thead>
-                                            <tr>Project Title</tr>
-                                            <tr>Department</tr>
-                                            <tr>Status</tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>UI/UX Design</td>
-                                                <td>UI Team</td>
-                                                <td>
-                                                    <Span class="status">Review</Span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Web Development</td>
-                                                <td>Frontend</td>
-                                                <td>
-                                                    <Span class="status">In Progress</Span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>U-Shop App</td>
-                                                <td>Mobile Team</td>
-                                                <td>
-                                                    <Span class="status">Pending</Span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="tabel-responsive">
+                                        <table width=100%>
+                                            <thead>
+                                                <tr>
+                                                    <td>Project Title</td>
+                                                    <td>Department</td>
+                                                    <td>Status</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>UI/UX Design</td>
+                                                    <td>UI Team</td>
+                                                    <td>
+                                                        <span class="status purple"></span>Review
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Web Development</td>
+                                                    <td>Frontend</td>
+                                                    <td>
+                                                        <span class="status pink"></span>In Progress
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>U-Shop App</td>
+                                                    <td>Mobile Team</td>
+                                                    <td>
+                                                        <span class="status orange"></span>Pending
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UI/UX Design</td>
+                                                    <td>UI Team</td>
+                                                    <td>
+                                                        <span class="status purple"></span>Review
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Web Development</td>
+                                                    <td>Frontend</td>
+                                                    <td>
+                                                        <span class="status pink"></span>In Progress
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>U-Shop App</td>
+                                                    <td>Mobile Team</td>
+                                                    <td>
+                                                        <span class="status orange"></span>Pending
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -158,9 +185,65 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="customer">
-                                        <img src="images/avater.png" width="40px" height="40px" alt="">
+                                        <div class="info">
+                                            <img src="images/avater.png" width="40px" height="40px" alt="">
+                                            <div>
+                                                <h4>Lewis S. Cunningham</h4>
+                                                <small>CEO Excerpt</small>
+                                            </div>
+                                        </div>
+                                        <div class="contact">
+                                            <Span class="las la-user-circle"></Span>
+                                            <Span class="las la-comment"></Span>
+                                            <Span class="las la-phone"></Span>
+                                        </div>
+                                        
                                     </div>
-
+                                    <div class="customer">
+                                        <div class="info">
+                                            <img src="images/avater.png" width="40px" height="40px" alt="">
+                                            <div>
+                                                <h4>Lewis S. Cunningham</h4>
+                                                <small>CEO Excerpt</small>
+                                            </div>
+                                        </div>
+                                        <div class="contact">
+                                            <Span class="las la-user-circle"></Span>
+                                            <Span class="las la-comment"></Span>
+                                            <Span class="las la-phone"></Span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="customer">
+                                        <div class="info">
+                                            <img src="images/avater.png" width="40px" height="40px" alt="">
+                                            <div>
+                                                <h4>Lewis S. Cunningham</h4>
+                                                <small>CEO Excerpt</small>
+                                            </div>
+                                        </div>
+                                        <div class="contact">
+                                            <Span class="las la-user-circle"></Span>
+                                            <Span class="las la-comment"></Span>
+                                            <Span class="las la-phone"></Span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="customer">
+                                        <div class="info">
+                                            <img src="images/avater.png" width="40px" height="40px" alt="">
+                                            <div>
+                                                <h4>Lewis S. Cunningham</h4>
+                                                <small>CEO Excerpt</small>
+                                            </div>
+                                        </div>
+                                        <div class="contact">
+                                            <Span class="las la-user-circle"></Span>
+                                            <Span class="las la-comment"></Span>
+                                            <Span class="las la-phone"></Span>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
 
                             </div>
